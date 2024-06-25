@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faUser, faCode, faDesktop, faPencilAlt, faEnvelope, faLocationArrow, faBriefcase, faLink } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3Alt, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBars, faUser, faCode, faDesktop, faPencilAlt, faEnvelope, faLocationArrow, faBriefcase, faLink, faDownload } from '@fortawesome/free-solid-svg-icons';
 import styles from './styles.module.css';
 
 const Nav: React.FC = () => {
@@ -26,18 +25,18 @@ const Nav: React.FC = () => {
               <h2>Sérgio Damasceno</h2>
               <h3>Full-Stack Developer</h3>
               <ul className={styles.profileInfo}>
-                <li><FontAwesomeIcon icon={faEnvelope} /> sergio@suporteinfojf.com.br</li>
-                <li><FontAwesomeIcon icon={faLocationArrow} /> Brasil</li>
-                <li><FontAwesomeIcon icon={faBriefcase} /> Full-time / Freelancer</li>
-                <li><FontAwesomeIcon icon={faLink} /> www.sergiodamasceno.cloud</li>
+                <li><FontAwesomeIcon icon={faEnvelope} color='#12F7D6' /> sergio@suporteinfojf.com.br</li>
+                <li><FontAwesomeIcon icon={faLocationArrow} color='#12F7D6' /> Brasil</li>
+                <li><FontAwesomeIcon icon={faBriefcase} color='#12F7D6' /> Full-time / Freelancer</li>
+                <li><FontAwesomeIcon icon={faLink} color='#12F7D6' /> www.sergiodamasceno.cloud</li>
               </ul>
               <div className={styles.profileSkills}>
-                <span><FontAwesomeIcon icon={faHtml5} /> HTML</span>
-                <span><FontAwesomeIcon icon={faCss3Alt} /> CSS</span>
-                <span><FontAwesomeIcon icon={faJs} /> JS</span>
-                <span><FontAwesomeIcon icon={faReact} /> REACT</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+                <span>REACT</span>
               </div>
-              <button className={styles.downloadCv}>Download CV</button>
+              <button className={styles.downloadCv}>Download CV <FontAwesomeIcon icon={faDownload} color='#292F36' /></button>
             </div>
           </section>
           <section className={styles.intro}>
