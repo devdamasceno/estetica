@@ -6,14 +6,32 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1440px; 
-  background-color: #000;
+  background-color: transparent;
   color: #fff;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: none;
 }
+
+.logo img {
+  height: 3rem;
+  width: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none; /* Remove qualquer borda */
+  display: block; /* Remove espaços em branco ao redor da imagem */
+}
+
+.logo a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 
 .nav {
   flex-grow: 1;
@@ -29,12 +47,13 @@
 .navItem a {
   text-decoration: none;
   color: #fff;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .navItem a:hover {
-  color: #00bfff;
+  color: #12F7D6;
 }
+
 
 .socialIcons {
   display: flex;
@@ -44,11 +63,28 @@
 .socialIcons a {
   color: #fff;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
 }
 
 .socialIcons a:hover {
-  color: #00bfff;
+  color: #12F7D6;
+  text-decoration: none;
 }
+
+.socialIcons span {
+  color: #fff;
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.socialIcons span:hover {
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-left: 0.3rem;
+}
+
 
 .mobileMenuButton {
   display: none;
@@ -68,7 +104,7 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #000;
+    background-color: transparent;
     padding: 1rem 0;
   }
 
