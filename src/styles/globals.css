@@ -85,12 +85,12 @@ a:hover {
 }
 
 body.dark {
-  background-color: #000000;
+  background-color: #1e1e1e;
   color: #fff; 
 }
 
 body.dark a {
-  color: #bb86fc;
+  color: #12F7D6;
 }
 
 body.dark a:hover {
@@ -104,5 +104,5 @@ body.dark .container {
 
 body.dark .footer {
   border-top: 1px solid #333;
-  border: 0; /* Remove borda da footer no modo escuro */
+  border: 0; 
 }

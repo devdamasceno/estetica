@@ -1,0 +1,157 @@
+.developer {
+  padding: 3rem 0;
+  font-size: 4.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #98FAEC;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.sidebar {
+  width: 4rem;
+  background-color: #1A1E23;
+  border: 1px solid #898a8dfd;
+  padding: 20px 0;
+  border-radius: 2rem;
+}
+
+.sidebarNav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sidebarNav li {
+  list-style: none;
+}
+
+.sidebarNav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+  padding: 40px;
+}
+
+.profile {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileCard {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-top-left-radius: 10rem;
+  border-bottom-right-radius: 10rem ;
+  text-align: center;
+}
+
+.profileImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profileCard h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profileCard h3 {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+
+.profileInfo {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+
+}
+
+.profileInfo li {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+
+.profileSkills {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.profileSkills span {
+  background-color: #12F7D6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.downloadCv {
+  padding: 10px 20px;
+  border: none;
+  background-color: #12F7D6;
+  color: #1e1e1e;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.intro {
+  flex: 2;
+  padding-left: 40px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.intro h1 span {
+  color: #12F7D6;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.contactLink {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #12F7D6;
+  text-decoration: none;
+}
+
+.contactLink i {
+  margin-left: 10px;
+}

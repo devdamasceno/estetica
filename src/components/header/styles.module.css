@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px; 
+  max-width: 1340px; 
   background-color: transparent;
   color: #fff;
+  border-bottom: 1px solid #43454dc4;
 }
 
 .logo {
@@ -32,7 +33,6 @@
   text-decoration: none;
 }
 
-
 .nav {
   flex-grow: 1;
   text-align: center;
@@ -50,10 +50,10 @@
   font-weight: 300;
 }
 
-.navItem a:hover {
+.navItem a:hover,
+.navItem a.selected {
   color: #12F7D6;
 }
-
 
 .socialIcons {
   display: flex;
@@ -84,7 +84,6 @@
   text-decoration: none;
   margin-left: 0.3rem;
 }
-
 
 .mobileMenuButton {
   display: none;

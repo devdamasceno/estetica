@@ -4,8 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000; /* Fundo preto */
-  color: #e0e0e0; /* Letras claras */
 }
 
 .title {
