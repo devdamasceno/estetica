@@ -121,6 +121,31 @@
   color: #fff;
 }
 
+.skillProfileCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #1A1E23;
+  border-radius: 8rem;
+  height: 24rem;
+}
+
+.skillProfileInfo {
+  gap: 1rem;
+  align-items: center;
+
+}
+
+.skillProfileInfo li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
 .downloadCv {
   padding: 10px 20px;
   margin-bottom: 1.5rem;
@@ -141,6 +166,8 @@
 .intro h1 {
   font-size: 3rem;
   line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 300;
 }
 
 .intro h1 span {
@@ -150,6 +177,11 @@
 .intro p {
   font-size: 1.2rem;
   line-height: 1.6;
+}
+
+.tags p {
+  color: #98FAEC;
+  font-size: 0.8rem;
 }
 
 .contactLink {

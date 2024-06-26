@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faUser, faCode, faDesktop, faPencilAlt, faEnvelope, faLocationArrow, faBriefcase, faLink, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faUser, faCode, faDesktop, faPencilAlt, faEnvelope, faLocationArrow, faBriefcase, faLink, faDownload, fa8, fa2, fa6, fa3 } from '@fortawesome/free-solid-svg-icons';
 import styles from './styles.module.css';
 
 const Nav: React.FC = () => {
@@ -40,12 +40,23 @@ const Nav: React.FC = () => {
             </div>
           </section>
           <section className={styles.intro}>
-            <h1>Olá<br />Eu sou <span>Sérgio</span>,<br />Desenvolvedor Full-Stack</h1>
-            <p>Eu ajudo empresas a crescer criando experiências web incríveis. Se você está procurando um desenvolvedor que gosta de fazer as coisas acontecerem,</p>
+            <div className={styles.tags}>
+              <p>{'<h1>'}</p>
+            </div>
+            <h1>Olá<br />Eu sou <span>Sérgio</span>,<br />Desenvolvedor Full-Stack<span style={{ fontSize: '0.8rem', marginLeft: '1rem', fontWeight: '100', color: '#98FAEC' }}>{'<h1>'}</span></h1>
+            <p>Ajudo empresas a crescer criando experiências web incríveis. Se você está procurando um desenvolvedor que gosta de fazer as coisas acontecerem,</p>
             <a href="#" className={styles.contactLink}>Vamos Conversar <FontAwesomeIcon icon={faEnvelope} /></a>
           </section>
+          <div className={styles.skillProfileCard}>
+            <ul className={styles.skillProfileInfo}>
+              <li><FontAwesomeIcon icon={fa2} color='#12F7D6' size={'2x'} /> Linguagem<br />Programação</li>
+              <li><FontAwesomeIcon icon={fa6} color='#12F7D6' size={'2x'} /> Ferramentas<br />Desenvolvimento</li>
+              <li><FontAwesomeIcon icon={fa3} color='#12F7D6' size={'2x'} /> Anos de<br />experiencia</li>
+            </ul>
+          </div>
         </main>
       </div>
+
     </>
   );
 };
