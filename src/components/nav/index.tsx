@@ -48,9 +48,9 @@ const Nav: React.FC = () => {
           </section>
           <div className={styles.skillProfileCard}>
             <ul className={styles.skillProfileInfo}>
-              <li style={{ fontSize: '0.9rem'}}><FontAwesomeIcon icon={fa2} color='#12F7D6' size={'2x'} /> Linguagem<br />Programação</li>
-              <li style={{ fontSize: '0.9rem'}}><FontAwesomeIcon icon={fa6} color='#12F7D6' size={'2x'} /> Ferramentas<br />Desenvolvimento</li>
-              <li style={{ fontSize: '0.9rem'}}><FontAwesomeIcon icon={fa3} color='#12F7D6' size={'2x'} /> Anos de<br />experiencia</li>
+              <li style={{ fontSize: '0.9rem' }}><FontAwesomeIcon icon={fa2} color='#12F7D6' size={'2x'} /> Linguagem<br />Programação</li>
+              <li style={{ fontSize: '0.9rem' }}><FontAwesomeIcon icon={fa6} color='#12F7D6' size={'2x'} /> Ferramentas<br />Desenvolvimento</li>
+              <li style={{ fontSize: '0.9rem' }}><FontAwesomeIcon icon={fa3} color='#12F7D6' size={'2x'} /> Anos de<br />experiencia</li>
             </ul>
           </div>
         </main>

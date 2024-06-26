@@ -1,0 +1,44 @@
+import React from 'react';
+import styles from './styles.module.css';
+
+const About: React.FC = () => {
+  return (
+    <div className={styles.aboutContainer}>
+      <div className={styles.aboutScroll}>
+        <img src="/scroll.png" alt="Scroll icon" className={styles.image} />
+      </div>
+      <div className={styles.headingContent}>
+        <div className={styles.heading}>
+          <h2>Sobre</h2>
+        </div>
+      </div>
+      <div className={styles.aboutContentWrap}>
+        <div className={styles.aboutContent}>
+          <div className={styles.intro}>
+            <div className={styles.codeBlock}>
+              <span className={styles.codeTag}>&lt;p&gt;</span><br />
+              <span className={styles.highlight} style={{ fontSize: '1.5rem' }}>Olá!</span><br />
+              <span className={styles.highlightText}>
+                Meu nome é Sérgio Damasceno e sou especialista em desenvolvimento web que utiliza
+                <span className={styles.highlight}> HTML</span>,
+                <span className={styles.highlight}> CSS</span>,
+                <span className={styles.highlight}> JS</span>,
+                and
+                <span className={styles.highlight}> REACT</span> etc.<br />
+                Sou um indivíduo altamente motivado e um eterno otimista, dedicado a escrever códigos claros, concisos e robustos que funcionem. Esforçando-se para nunca parar de aprender e melhorar.<br />
+                Quando não estou codificando, estou <span className={styles.highlight}>escrevendo blogs</span>, lendo ou praticando algum <span className={styles.highlight}>esporte</span>.<br />
+                Gosto de ter minha perspectiva e sistemas de crenças desafiados para ver o mundo com novos olhos.<br />
+              </span>
+              <span className={styles.codeTag}>&lt;/p&gt;</span>
+            </div>
+          </div>
+          <div className={styles.aboutImage}>
+            <img src='/about.png' alt='Dev Code' />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;

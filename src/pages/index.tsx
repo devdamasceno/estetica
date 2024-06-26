@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '@/components/header';
 import styles from '@/styles/home.module.css';
 import Nav from '@/components/nav';
+import About from '@/components/about';
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       <Header />
       <div className={styles.container}>
         <Nav />
+      </div>
+      <div >
+        <About />
       </div>
     </>
   );
