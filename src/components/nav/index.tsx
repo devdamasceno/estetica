@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faUser, faCode, faDesktop, faPencilAlt, faEnvelope, faLocationArrow, faBriefcase, faLink, faDownload, fa8, fa2, fa6, fa3 } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faUser, faCode, faDesktop, faPencilAlt, faEnvelope, faLocationArrow, faBriefcase, faLink, faDownload, fa2, fa6, fa3 } from '@fortawesome/free-solid-svg-icons';
 import styles from './styles.module.css';
 
 const Nav: React.FC = () => {
@@ -10,7 +10,6 @@ const Nav: React.FC = () => {
       <div className={styles.container}>
         <aside className={styles.sidebar}>
           <ul className={styles.sidebarNav}>
-            <li><a href="#"><FontAwesomeIcon icon={faBars} size={'2xs'} /></a></li>
             <li><a href="#"><FontAwesomeIcon icon={faUser} size={'2xs'} /></a></li>
             <li><a href="#"><FontAwesomeIcon icon={faCode} size={'2xs'} /></a></li>
             <li><a href="#"><FontAwesomeIcon icon={faDesktop} size={'2xs'} /></a></li>
@@ -49,14 +48,13 @@ const Nav: React.FC = () => {
           </section>
           <div className={styles.skillProfileCard}>
             <ul className={styles.skillProfileInfo}>
-              <li><FontAwesomeIcon icon={fa2} color='#12F7D6' size={'2x'} /> Linguagem<br />Programação</li>
-              <li><FontAwesomeIcon icon={fa6} color='#12F7D6' size={'2x'} /> Ferramentas<br />Desenvolvimento</li>
-              <li><FontAwesomeIcon icon={fa3} color='#12F7D6' size={'2x'} /> Anos de<br />experiencia</li>
+              <li style={{ fontSize: '0.9rem'}}><FontAwesomeIcon icon={fa2} color='#12F7D6' size={'2x'} /> Linguagem<br />Programação</li>
+              <li style={{ fontSize: '0.9rem'}}><FontAwesomeIcon icon={fa6} color='#12F7D6' size={'2x'} /> Ferramentas<br />Desenvolvimento</li>
+              <li style={{ fontSize: '0.9rem'}}><FontAwesomeIcon icon={fa3} color='#12F7D6' size={'2x'} /> Anos de<br />experiencia</li>
             </ul>
           </div>
         </main>
       </div>
-
     </>
   );
 };
