@@ -104,10 +104,11 @@
 }
 
 .skillsIcons {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .skillIconContainer {
@@ -142,7 +143,6 @@
 
 
 @media (max-width: 768px) {
-  
   .aboutScroll {
     display: flex;
     align-items: center;
@@ -165,12 +165,12 @@
   }
 
   .skillsTitle::after {
-    left: calc(50% + 3rem); /* Adjust for smaller screens */
+    left: calc(50% + 3rem); 
   }
 
   .skillsTitle span::before {
-    width: calc(8rem - 20px); /* Adjust for smaller screens */
-    left: calc(50% - 4rem + 10px); /* Adjust for smaller screens */
+    width: calc(8rem - 20px); 
+    left: calc(50% - 4rem + 10px); 
   }
 
   .skillsGrid {
@@ -184,13 +184,12 @@
   }
 
   .skillsIcons {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-
   .skillsContainer {
     display: flex;
     flex-direction: column;
@@ -229,6 +228,7 @@
   }
 
   .skillIcon {
+    width: 100%;
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
@@ -236,5 +236,10 @@
   .skillIconContainer img {
     width: 4rem;
     height: 4rem;
+  }
+
+  .skillsIcons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
