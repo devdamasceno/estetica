@@ -3,6 +3,7 @@ import Header from '@/components/header';
 import styles from '@/styles/home.module.css';
 import Nav from '@/components/nav';
 import About from '@/components/about';
+import Skills from '@/components/skills';
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
       </div>
       <div >
         <About />
+      </div>
+      <div >
+        <Skills />
       </div>
     </>
   );

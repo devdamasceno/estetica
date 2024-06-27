@@ -1,0 +1,113 @@
+/* components/styles.module.css */
+.skillsContainer {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-image: url('/backgroundSkills.png'); 
+  background-size: cover;
+  background-position: center;
+  color: #e0e0e0;
+}
+
+.aboutScroll {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.aboutScroll h1 {
+  position: absolute;
+  padding-left: 28rem;
+  font-size: 8rem;
+  color: #12F7D6;
+  font-weight: 300;
+}
+
+.skillsTitle {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  color: #12F7D6;
+  position: relative;
+  display: inline-block;
+}
+
+.skillsTitle::before,
+.skillsTitle::after {
+  content: '';
+  position: absolute;
+  background-color: #12F7D6;
+}
+
+.skillsTitle::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: calc(107% + 0.5rem);
+  left: calc(56% - 5.5rem);
+  color: #12F7D6;
+}
+
+.skillsTitle::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: calc(107% + 0.5rem);
+  left: calc(48% + 4.5rem); 
+  color: #12F7D6;
+}
+
+.skillsTitle span::before {
+  content: '';
+  position: absolute;
+  width: calc(10rem - 20px); /* Width of the bar, subtracting the circles */
+  height: 2px;
+  background-color: #12F7D6;
+  top: calc(100% + 1rem); /* Align with the circles */
+  left: calc(50% - 5rem + 10px); /* Centering the bar */
+}
+
+.skillsSubtitle {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+
+.skillsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.skillBox {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.skillIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.skillsIcons {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.skillIconContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.skillIconContainer img {
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 0.5rem;
+}
