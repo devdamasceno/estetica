@@ -10,6 +10,7 @@ const Nav: React.FC = () => {
       <div className={styles.container}>
         <aside className={styles.sidebar}>
           <ul className={styles.sidebarNav}>
+          <li><a href="#"><FontAwesomeIcon icon={faBars} size={'2xs'} /></a></li>
             <li><a href="#"><FontAwesomeIcon icon={faUser} size={'2xs'} /></a></li>
             <li><a href="#"><FontAwesomeIcon icon={faCode} size={'2xs'} /></a></li>
             <li><a href="#"><FontAwesomeIcon icon={faDesktop} size={'2xs'} /></a></li>
