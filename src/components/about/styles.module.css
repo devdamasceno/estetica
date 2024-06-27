@@ -92,6 +92,7 @@
   .aboutContainer {
     padding: 0 2rem;
     margin: 0 auto;
+    padding-bottom: 5rem;
   }
 
   .aboutContent {
@@ -100,6 +101,14 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+  }
+
+  .heading h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
   }
 
   .intro {
