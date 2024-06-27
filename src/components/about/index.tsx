@@ -26,7 +26,7 @@ const About: React.FC = () => {
                 and
                 <span className={styles.highlight}> REACT</span> etc.<br />
                 Sou um indivíduo altamente motivado e um eterno otimista, dedicado a escrever códigos claros, concisos e robustos que funcionem. Esforçando-se para nunca parar de aprender e melhorar.<br />
-                Quando não estou codificando, estou <span className={styles.highlight}>escrevendo blogs</span>, lendo ou praticando algum <span className={styles.highlight}>esporte</span>.<br />
+                Quando não estou codificando, estou <span className={styles.highlight}>ESCREVENDO BLOG</span>, lendo ou praticando algum <span className={styles.highlight}>ESPORTE</span>.<br />
                 Gosto de ter minha perspectiva e sistemas de crenças desafiados para ver o mundo com novos olhos.<br />
               </span>
               <span className={styles.codeTag}>&lt;/p&gt;</span>
