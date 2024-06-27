@@ -1,0 +1,171 @@
+.worksContainer {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-image: url('../../../public/works.svg'); 
+  background-size: cover;
+  background-position: center;
+  color: #e0e0e0;
+}
+
+.scrollIndicator {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.scrollIndicator h1 {
+  position: absolute;
+  padding-left: 28rem;
+  font-size: 8rem;
+  color: #12F7D6;
+  font-weight: 300;
+}
+
+.worksTitle {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  color: #12F7D6;
+  position: relative;
+  display: inline-block;
+}
+
+.worksTitle::before,
+.worksTitle::after {
+  content: '';
+  position: absolute;
+  background-color: #12F7D6;
+}
+
+.worksTitle::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: calc(108% + 0.5rem);
+  left: calc(57% - 5.5rem);
+}
+
+.worksTitle::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: calc(108% + 0.5rem);
+  left: calc(46% + 4.5rem); 
+}
+
+.worksTitle span::before {
+  content: '';
+  position: absolute;
+  width: calc(10rem - 20px); 
+  height: 2px;
+  background-color: #12F7D6;
+  top: calc(100% + 1rem); 
+  left: calc(50% - 5rem + 10px); 
+}
+
+.worksSubtitle {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+
+.projectDisplay {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.project {
+  background: #98FAEC;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.projectImage {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.projectLink {
+  color: #12F7D6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .scrollIndicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+    position: relative;
+  }
+  
+  .scrollIndicator h1 {
+    display: none;
+  }
+
+  .worksTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .worksTitle::before {
+    left: calc(50% - 4rem); 
+  }
+
+  .worksTitle::after {
+    left: calc(50% + 3rem); 
+  }
+
+  .worksTitle span::before {
+    width: calc(8rem - 20px); 
+    left: calc(50% - 4rem + 10px); 
+  }
+
+  .projectDisplay {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project {
+    padding: 0 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .worksContainer {
+    padding: 2rem 1rem;
+  }
+
+  .worksTitle {
+    font-size: 1.5rem;
+  }
+
+  .worksSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .project {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .projectImage {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .projectLink {
+    font-size: 0.9rem;
+  }
+}
