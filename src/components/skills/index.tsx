@@ -28,19 +28,19 @@ const Skills: React.FC = () => {
       <div className={styles.skillsIcons}>
         <div className={styles.skillIconContainer}>
           <img src="/html.png" alt="HTML" />
-          <span>HTML</span>
+          <span className={styles.skillHtml}>HTML</span>
         </div>
         <div className={styles.skillIconContainer}>
           <img src="/css.png" alt="CSS" />
-          <span>CSS</span>
+          <span className={styles.skillCss}>CSS</span>
         </div>
         <div className={styles.skillIconContainer}>
           <img src="/js.png" alt="JavaScript" />
-          <span>JavaScript</span>
+          <span className={styles.skillJavascript}>JS</span>
         </div>
         <div className={styles.skillIconContainer}>
           <img src="/react.png" alt="React" />
-          <span>React</span>
+          <span className={styles.skillReact}>React</span>
         </div>
       </div>
     </div>

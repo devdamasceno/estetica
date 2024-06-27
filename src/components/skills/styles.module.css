@@ -60,11 +60,11 @@
 .skillsTitle span::before {
   content: '';
   position: absolute;
-  width: calc(10rem - 20px); /* Width of the bar, subtracting the circles */
+  width: calc(10rem - 20px); 
   height: 2px;
   background-color: #12F7D6;
-  top: calc(100% + 1rem); /* Align with the circles */
-  left: calc(50% - 5rem + 10px); /* Centering the bar */
+  top: calc(100% + 1rem); 
+  left: calc(50% - 5rem + 10px); 
 }
 
 .skillsSubtitle {
@@ -81,11 +81,20 @@
 }
 
 .skillBox {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 2rem;
+  background: #98FAEC;
+  padding: 1rem;
   border-radius: 10px;
-  width: 200px;
+  width: 400px;
+  border-left: 10px solid #28A9E0;
   text-align: center;
+}
+
+.skillBox h3 {
+  color: #292F36;
+}
+
+.skillBox p {
+  color: #43454D;
 }
 
 .skillIcon {
@@ -110,4 +119,20 @@
   width: 6rem;
   height: 6rem;
   margin-bottom: 0.5rem;
+}
+
+.skillHtml {
+  color: #E54F26;
+}
+
+.skillCss {
+  color: #0C73B8;
+}
+
+.skillJavascript {
+  color: #E7A020;
+}
+
+.skillReact {
+  color: #28A9E0;
 }
