@@ -6,6 +6,7 @@ import About from '@/components/about';
 import Skills from '@/components/skills';
 import Works from '@/components/works';
 import Blog from '@/components/blog';
+import Contact from '@/components/contact';
 
 export default function Home() {
   return (
@@ -31,6 +32,9 @@ export default function Home() {
       </div>
       <div >
         <Blog />
+      </div>
+      <div >
+        <Contact />
       </div>
     </>
   );
