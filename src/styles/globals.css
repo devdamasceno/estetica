@@ -9,26 +9,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0; 
+  border: 0;
 }
 
 html,
 body {
-  background-color: #292F36; 
-  color: #fff; 
+  background-color: #292F36;
+  color: #fff;
 }
 
 body {
-  font-family: 'Fira Code', monospace; 
+  font-family: 'Fira Code', monospace;
 }
 
 .nav-link {
-  font-family: 'Fira Code', monospace; 
+  font-family: 'Fira Code', monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
-  border: 0; /* Remove bordas dos headers */
+  border: 0; 
 }
 
 li {
@@ -39,18 +39,42 @@ li {
 p {
   line-height: 1.6;
   margin-bottom: 1rem;
-  border: 0; 
+  border: 0;
 }
 
 a {
-  color: #fff; /* Define a cor do texto como branco */
-  text-decoration: none; 
-  border: 0; 
+  color: #fff; 
+  text-decoration: none;
+  border: 0;
 }
 
 a:hover {
-  color: #12F7D6; /* Define a cor do texto no hover */
+  color: #12F7D6; 
   text-decoration: underline;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
 }
 
 /* Layout */
@@ -58,7 +82,7 @@ a:hover {
   max-width: 800px;
   width: 100%;
   padding: 20px;
-  background: #1e1e1e; 
+  background: #1e1e1e;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   border-radius: 8px;
 }
@@ -67,7 +91,7 @@ a:hover {
   width: 100%;
   padding: 20px 0;
   text-align: center;
-  border: 0; /* Remove borda do header */
+  border: 0;
 }
 
 .footer {
@@ -75,13 +99,13 @@ a:hover {
   padding: 20px 0;
   text-align: center;
   border-top: 1px solid #333;
-  border: 0; /* Remove borda da footer */
+  border: 0;
 }
 
 .footer a {
   color: inherit;
   text-decoration: none;
-  border: 0; /* Remove borda dos links no footer */
+  border: 0; 
 }
 
 .footer a:hover {
@@ -91,7 +115,7 @@ a:hover {
 
 body.dark {
   background-color: #1e1e1e;
-  color: #fff; 
+  color: #fff;
 }
 
 body.dark a {
@@ -99,7 +123,7 @@ body.dark a {
 }
 
 body.dark a:hover {
-  color: #12F7D6; /* Define a cor do texto no hover no modo escuro */
+  color: #12F7D6; 
 }
 
 body.dark .container {
@@ -109,5 +133,5 @@ body.dark .container {
 
 body.dark .footer {
   border-top: 1px solid #333;
-  border: 0; 
+  border: 0;
 }
