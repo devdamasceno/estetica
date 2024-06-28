@@ -41,15 +41,15 @@
   height: 10px;
   border-radius: 50%;
   top: calc(107% + 0.5rem);
-  left: calc(50% - 5.5rem);
+  left: calc(56% - 5.5rem);
 }
 
 .contactTitle::after {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  top: calc(107% + 0.5rem);
-  left: calc(50% + 4.5rem);
+  top: calc(106% + 0.5rem);
+  left: calc(48% + 4.5rem);
 }
 
 .contactTitle span::before {
@@ -73,7 +73,8 @@
   border: 2px solid #12F7D6;
   color: #12F7D6;
   padding: 0.5rem 1.5rem;
-  border-radius: 5px;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   font-size: 1.2rem;
   cursor: pointer;
   margin-bottom: 3rem;
@@ -123,16 +124,21 @@
 }
 
 .footer {
-  margin-top: 3rem;
-  text-align: center;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
   font-size: 0.9rem;
+  border-top: 1px solid #43454D;
+  margin-top: 5em;
+  margin-bottom: 0;
 }
 
 .footerLinks {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin: 1rem 0;
+  gap: 3rem;
 }
 
 .footerLinks a {
@@ -142,7 +148,9 @@
 
 .footerSocial {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -152,7 +160,7 @@
 }
 
 .footerDesign {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .footerDesign a {
@@ -198,8 +206,9 @@
 }
 
 @media (max-width: 480px) {
+
   .contactContainer {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
   }
 
   .contactTitle {
@@ -224,6 +233,10 @@
   }
 
   .footer {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-size: 0.8rem;
   }
 

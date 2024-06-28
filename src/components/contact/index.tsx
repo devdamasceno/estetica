@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
+import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact: React.FC = () => {
   return (
@@ -31,15 +33,21 @@ const Contact: React.FC = () => {
         <button type="submit" className={styles.submitButton}>Enviar Mensagem</button>
       </form>
       <footer className={styles.footer}>
-        <p>© 2023 Sérgio Damasceno. Todos os direitos reservados.</p>
+        <p>© 2023 Todos os direitos reservados.</p>
         <div className={styles.footerLinks}>
           <a href="#">Politica de Privacidade</a>
           <a href="#">Termos & Condições</a>
         </div>
         <div className={styles.footerSocial}>
-          <a href="#"><img src="/instagram-icon.png" alt="Instagram" /></a>
-          <a href="#"><img src="/linkedin-icon.png" alt="LinkedIn" /></a>
-          <a href="#"><img src="/github-icon.png" alt="GitHub" /></a>
+          <a href="https://github.com/devdamasceno" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href="https://www.linkedin.com/in/sergio-damasceno" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://instagram.com/sergiodamasceno_" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </div>
         <p className={styles.footerDesign}>Design By <a href="#">Sérgio Damasceno</a></p>
       </footer>
