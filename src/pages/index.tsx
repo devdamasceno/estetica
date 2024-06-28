@@ -5,6 +5,7 @@ import Nav from '@/components/nav';
 import About from '@/components/about';
 import Skills from '@/components/skills';
 import Works from '@/components/works';
+import Blog from '@/components/blog';
 
 export default function Home() {
   return (
@@ -27,6 +28,9 @@ export default function Home() {
       </div>
       <div >
         <Works />
+      </div>
+      <div >
+        <Blog />
       </div>
     </>
   );
