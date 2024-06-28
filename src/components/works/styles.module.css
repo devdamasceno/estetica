@@ -79,11 +79,11 @@
 }
 
 .project {
-  background: #98FAEC;
+  background: transparent;
   padding: 1rem;
   border-radius: 10px;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   text-align: center;
   margin-bottom: 1rem;
 }

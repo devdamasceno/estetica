@@ -11,15 +11,10 @@ const Works: React.FC = () => {
         Works
         <span></span>
       </h2>
-      <p className={styles.worksSubtitle}>I had the pleasure of working with these awesome projects</p>
+      <p className={styles.worksSubtitle}>Tive o prazer de trabalhar com esses projetos incríveis!</p>
       <div className={styles.projectDisplay}>
         <div className={styles.project}>
-          <img src="/coding.png" alt="Coding Project" className={styles.projectImage} />
-          <a href="#" className={styles.projectLink}>View Website</a>
-        </div>
-        <div className={styles.project}>
-          <img src="/website.png" alt="Website Project" className={styles.projectImage} />
-          <a href="#" className={styles.projectLink}>View Website</a>
+          <img src="/backgroundWork.svg" alt="Coding Project" className={styles.projectImage} />
         </div>
       </div>
     </div>
