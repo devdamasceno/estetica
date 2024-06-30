@@ -220,8 +220,10 @@
   }
 
   .contactButton {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.9rem;
+    display: flex;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
   }
 
   .formGroup {
@@ -230,6 +232,8 @@
 
   .submitButton {
     width: 100%;
+    padding: 0.7rem ;
+    border-radius: 5rem;
   }
 
   .footer {
@@ -245,8 +249,7 @@
     gap: 0.5rem;
   }
 
-  .footerSocial img {
-    width: 20px;
-    height: 20px;
+  .footerSocial {
+    margin-top: 1rem;
   }
 }

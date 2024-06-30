@@ -6,16 +6,16 @@ import styles from './styles.module.css';
 const Nav: React.FC = () => {
   return (
     <>
-      <h1 className={styles.developer}>developer</h1>
+      <h1 id='nav' className={styles.developer}>developer</h1>
       <div className={styles.container}>
         <aside className={styles.sidebar}>
           <ul className={styles.sidebarNav}>
-          <li><a href="#"><FontAwesomeIcon icon={faBars} size={'2xs'} /></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faUser} size={'2xs'} /></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faCode} size={'2xs'} /></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faDesktop} size={'2xs'} /></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faPencilAlt} size={'2xs'} /></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faEnvelope} size={'2xs'} /></a></li>
+          <li><a href="#nav"><FontAwesomeIcon icon={faBars} size={'2xs'} /></a></li>
+            <li><a href="#about"><FontAwesomeIcon icon={faUser} size={'2xs'} /></a></li>
+            <li><a href="#skills"><FontAwesomeIcon icon={faCode} size={'2xs'} /></a></li>
+            <li><a href="#works"><FontAwesomeIcon icon={faDesktop} size={'2xs'} /></a></li>
+            <li><a href="#blog"><FontAwesomeIcon icon={faPencilAlt} size={'2xs'} /></a></li>
+            <li><a href="#contact"><FontAwesomeIcon icon={faEnvelope} size={'2xs'} /></a></li>
           </ul>
         </aside>
         <main className={styles.mainContent}>
@@ -45,7 +45,7 @@ const Nav: React.FC = () => {
             </div>
             <h1>Olá<br />Eu sou <span>Sérgio</span>,<br />Desenvolvedor Full-Stack<span style={{ fontSize: '0.8rem', marginLeft: '1rem', fontWeight: '100', color: '#98FAEC' }}>{'<h1>'}</span></h1>
             <p>Ajudo empresas a crescer criando experiências web incríveis. Se você está procurando um desenvolvedor que gosta de fazer as coisas acontecerem,</p>
-            <a href="#" className={styles.contactLink}>Vamos Conversar <FontAwesomeIcon icon={faEnvelope} /></a>
+            <a href="mailto:sergio@suporteinfojf.com.br" className={styles.contactLink}>Vamos Conversar <FontAwesomeIcon icon={faEnvelope} /></a>
           </section>
           <div className={styles.skillProfileCard}>
             <ul className={styles.skillProfileInfo}>

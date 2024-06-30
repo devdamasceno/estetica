@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact: React.FC = () => {
   return (
-    <div className={styles.contactContainer}>
+    <div id='contact' className={styles.contactContainer}>
       <div className={styles.scrollIndicator}>
         <img src="/scroll.png" alt="Scroll icon" className={styles.image} />
       </div>
@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
-        <p className={styles.footerDesign}>Design By <a href="#">Sérgio Damasceno</a></p>
+        <p className={styles.footerDesign}>Design By <a href="/">Sérgio Damasceno</a></p>
       </footer>
     </div>
   );

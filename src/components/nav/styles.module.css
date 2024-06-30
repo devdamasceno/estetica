@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 70vh;
 }
 
 .sidebar {
@@ -197,24 +197,26 @@
 @media (max-width: 768px) {
   
   .developer {
-    padding-top: 1rem;
-    margin-bottom: -0.9rem;
+    padding: 1rem;
+    margin-bottom: -0.2rem;
     font-size: 2.5rem;
   }
 
   .container {
     flex-direction: column;
     height: 100%;
-    padding: 1rem;
+    padding-bottom: 4rem;
   }
 
   .sidebar {
     margin-top: 0;
     margin-bottom: 1rem;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     border: none;
+    background-color: #1A1E23;
+    border: 1px solid #898a8dfd;
   }
 
   .contactLink {

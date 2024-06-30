@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 
 const Blog: React.FC = () => {
   return (
-    <div className={styles.blogsContainer}>
+    <div id='blog' className={styles.blogsContainer}>
       <div className={styles.scrollIndicator}>
         <img src="/scroll.png" alt="Scroll icon" className={styles.image} />
       </div>
