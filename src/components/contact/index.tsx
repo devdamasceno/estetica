@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
   return (
     <div id='contact' className={styles.contactContainer}>
       <div className={styles.scrollIndicator}>
-        <Image src="/scroll.png" alt="Scroll icon" width={30} height={30} className={styles.image} />
+        <Image src="/scroll.png" alt="Scroll icon" width={30} height={120} className={styles.image} />
       </div>
       <h2 className={styles.contactTitle}>
         Contato
@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
-        <p className={styles.footerDesign}>Design By 
+        <p className={styles.footerDesign}>Design By
           <Link legacyBehavior href="/">
             <a> Sérgio Damasceno</a>
           </Link>

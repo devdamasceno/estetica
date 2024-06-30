@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './styles.module.css';
+import Image from 'next/image';
 
 const Skills: React.FC = () => {
   return (
     <div id='skills' className={styles.skillsContainer}>
       <div className={styles.aboutScroll}>
-        <img src="/scroll.png" alt="Scroll icon" className={styles.image} />
+        <Image src="/scroll.png" alt="Scroll icon" width={30} height={120} className={styles.image} />
         <h1>{'</>'}</h1>
       </div>
       <h2 className={styles.skillsTitle}>

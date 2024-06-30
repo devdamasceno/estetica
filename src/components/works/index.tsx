@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './styles.module.css';
+import Image from 'next/image';
 
 const Works: React.FC = () => {
   return (
     <div id='works' className={styles.worksContainer}>
       <div className={styles.scrollIndicator}>
-        <img src="/scroll.png" alt="Scroll icon" className={styles.image} />
+        <Image src="/scroll.png" alt="Scroll icon" width={30} height={120} className={styles.image} />
       </div>
       <h2 className={styles.worksTitle}>
         Works
