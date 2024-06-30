@@ -24,7 +24,7 @@
   width: 3rem;
   background-color: #1A1E23;
   border: 1px solid #898a8dfd;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   border-radius: 2rem;
 }
 
@@ -211,7 +211,7 @@
   .sidebar {
     margin-top: 0;
     margin-bottom: 1rem;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
     border: none;
