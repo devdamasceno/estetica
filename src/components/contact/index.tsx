@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import styles from './styles.module.css';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,7 +9,7 @@ const Contact: React.FC = () => {
   return (
     <div id='contact' className={styles.contactContainer}>
       <div className={styles.scrollIndicator}>
-        <img src="/scroll.png" alt="Scroll icon" className={styles.image} />
+        <Image src="/scroll.png" alt="Scroll icon" width={50} height={50} className={styles.image} />
       </div>
       <h2 className={styles.contactTitle}>
         Contato
@@ -35,8 +37,12 @@ const Contact: React.FC = () => {
       <footer className={styles.footer}>
         <p>© 2023 Todos os direitos reservados.</p>
         <div className={styles.footerLinks}>
-          <a href="#">Politica de Privacidade</a>
-          <a href="#">Termos & Condições</a>
+          <Link legacyBehavior href="/privacy-policy">
+            <a>Politica de Privacidade</a>
+          </Link>
+          <Link legacyBehavior href="/terms-conditions">
+            <a>Termos & Condições</a>
+          </Link>
         </div>
         <div className={styles.footerSocial}>
           <a href="https://github.com/devdamasceno" target="_blank" rel="noopener noreferrer">
@@ -49,7 +55,11 @@ const Contact: React.FC = () => {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
-        <p className={styles.footerDesign}>Design By <a href="/">Sérgio Damasceno</a></p>
+        <p className={styles.footerDesign}>Design By 
+          <Link legacyBehavior href="/">
+            <a> Sérgio Damasceno</a>
+          </Link>
+        </p>
       </footer>
     </div>
   );
