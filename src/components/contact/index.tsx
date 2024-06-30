@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
   return (
     <div id='contact' className={styles.contactContainer}>
       <div className={styles.scrollIndicator}>
-        <Image src="/scroll.png" alt="Scroll icon" width={50} height={50} className={styles.image} />
+        <Image src="/scroll.png" alt="Scroll icon" width={30} height={30} className={styles.image} />
       </div>
       <h2 className={styles.contactTitle}>
         Contato

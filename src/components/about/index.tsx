@@ -1,11 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './styles.module.css';
 
 const About: React.FC = () => {
   return (
     <div id='about' className={styles.aboutContainer}>
       <div className={styles.aboutScroll}>
-        <img src="/scroll.png" alt="Scroll icon" className={styles.image} />
+        <Image src="/scroll.png" alt="Scroll icon" width={30} height={30} className={styles.image} />
       </div>
       <div className={styles.headingContent}>
         <div className={styles.heading}>
@@ -33,7 +34,7 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className={styles.aboutImage}>
-            <img src='/about.png' alt='Dev Code' />
+            <Image src='/about.png' alt='Dev Code' width={500} height={500} />
           </div>
         </div>
       </div>
