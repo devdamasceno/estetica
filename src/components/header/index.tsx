@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
+import Link from 'next/link';
 import styles from './styles.module.css';
 
 const Header: React.FC = () => {
@@ -18,55 +20,57 @@ const Header: React.FC = () => {
 
   return (
     <>
-    <header className={styles.header}>
-      <div className={styles.logo}>
-        <img src='/logo.svg' alt="Logo" />
-        <a>Sérgio Damasceno</a>
-      </div>
-      <div>
-        <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileNavOpen : ''}`}>
-          <ul className={styles.navList}>
-            <li className={styles.navItem}>
-              <a
-                href="/"
-                className={selected === 'home' ? styles.selected : ''}
-                onClick={() => handleSelect('home')}
-              >
-                Home
-              </a>
-            </li>
-            <li className={styles.navItem}>
-              <a
-                href="/"
-                className={selected === 'blog' ? styles.selected : ''}
-                onClick={() => handleSelect('blog')}
-              >
-                Blog
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div className={styles.mobileMenuButton} onClick={toggleMobileMenu}>
-          <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
+      <header className={styles.header}>
+        <div className={styles.logo}>
+          <Image src='/logo.svg' alt="Logo" width={50} height={50} />
+          <a>Sérgio Damasceno</a>
         </div>
-      </div>
-      <div className={styles.socialIcons}>
-        <a href="https://github.com/devdamasceno" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} />
-          <span>Github</span>
-        </a>
-        <a href="https://www.linkedin.com/in/sergio-damasceno" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} />
-          <span>Linkedin</span>
-        </a>
-        <a href="https://instagram.com/sergiodamasceno_" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faInstagram} />
-          <span>Instagram</span>
-        </a>
-      </div>
-    </header>
-    <hr />
-  </>
+        <div>
+          <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileNavOpen : ''}`}>
+            <ul className={styles.navList}>
+              <li className={styles.navItem}>
+                <Link legacyBehavior href="/">
+                  <a
+                    className={selected === 'home' ? styles.selected : ''}
+                    onClick={() => handleSelect('home')}
+                  >
+                    Home
+                  </a>
+                </Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link legacyBehavior href="/blog">
+                  <a
+                    className={selected === 'blog' ? styles.selected : ''}
+                    onClick={() => handleSelect('blog')}
+                  >
+                    Blog
+                  </a>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          <div className={styles.mobileMenuButton} onClick={toggleMobileMenu}>
+            <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
+          </div>
+        </div>
+        <div className={styles.socialIcons}>
+          <a href="https://github.com/devdamasceno" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+            <span>Github</span>
+          </a>
+          <a href="https://www.linkedin.com/in/sergio-damasceno" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+            <span>Linkedin</span>
+          </a>
+          <a href="https://instagram.com/sergiodamasceno_" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+            <span>Instagram</span>
+          </a>
+        </div>
+      </header>
+      <hr />
+    </>
   );
 };
 
