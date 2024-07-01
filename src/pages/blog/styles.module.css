@@ -1,0 +1,110 @@
+.blogContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #fff;
+}
+
+.blogTitle {
+  font-size: 3rem;
+  text-align: center;
+  color: #98FAEC;
+}
+
+.blogSubtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.subscribeButton {
+  display: block;
+  margin: 0 auto 3rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #1A1E23;
+  background-color: #12F7D6;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background-color: #1A1E23;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.postImage {
+  border-radius: 1rem;
+}
+
+.postContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.postContent h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.postContent p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.readMore {
+  color: #12F7D6;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.postMeta {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #98FAEC;
+}
+
+.metaTag, .metaAuthor, .metaDate, .metaReadTime {
+  background-color: #292F36;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .post {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .postImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .postContent {
+    align-items: center;
+    text-align: center;
+  }
+
+  .postMeta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

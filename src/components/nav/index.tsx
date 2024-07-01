@@ -4,18 +4,32 @@ import { faBars, faUser, faCode, faDesktop, faPencilAlt, faEnvelope, faLocationA
 import styles from './styles.module.css';
 
 const Nav: React.FC = () => {
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const targetHref = e.currentTarget.getAttribute('href');
+    if (targetHref) {
+      const targetId = targetHref.substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+
   return (
     <>
       <h1 id='nav' className={styles.developer}>developer</h1>
       <div className={styles.container}>
         <aside className={styles.sidebar}>
           <ul className={styles.sidebarNav}>
-          <li><a href="#nav"><FontAwesomeIcon icon={faBars} size={'2xs'} /></a></li>
-            <li><a href="#about"><FontAwesomeIcon icon={faUser} size={'2xs'} /></a></li>
-            <li><a href="#skills"><FontAwesomeIcon icon={faCode} size={'2xs'} /></a></li>
-            <li><a href="#works"><FontAwesomeIcon icon={faDesktop} size={'2xs'} /></a></li>
-            <li><a href="#blog"><FontAwesomeIcon icon={faPencilAlt} size={'2xs'} /></a></li>
-            <li><a href="#contact"><FontAwesomeIcon icon={faEnvelope} size={'2xs'} /></a></li>
+            <li><a href="#nav" onClick={handleScroll}><FontAwesomeIcon icon={faBars} size={'2xs'} /></a></li>
+            <li><a href="#about" onClick={handleScroll}><FontAwesomeIcon icon={faUser} size={'2xs'} /></a></li>
+            <li><a href="#skills" onClick={handleScroll}><FontAwesomeIcon icon={faCode} size={'2xs'} /></a></li>
+            <li><a href="#works" onClick={handleScroll}><FontAwesomeIcon icon={faDesktop} size={'2xs'} /></a></li>
+            <li><a href="#blog" onClick={handleScroll}><FontAwesomeIcon icon={faPencilAlt} size={'2xs'} /></a></li>
+            <li><a href="#contact" onClick={handleScroll}><FontAwesomeIcon icon={faEnvelope} size={'2xs'} /></a></li>
           </ul>
         </aside>
         <main className={styles.mainContent}>

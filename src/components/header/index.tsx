@@ -28,7 +28,7 @@ const Header: React.FC = () => {
           <ul className={styles.navList}>
             <li className={styles.navItem}>
               <a
-                href="#home"
+                href="/"
                 className={selected === 'home' ? styles.selected : ''}
                 onClick={() => handleSelect('home')}
               >
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
             </li>
             <li className={styles.navItem}>
               <a
-                href="#blog"
+                href="/"
                 className={selected === 'blog' ? styles.selected : ''}
                 onClick={() => handleSelect('blog')}
               >
