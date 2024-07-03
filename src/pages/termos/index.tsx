@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './styles.module.css';
-import Link from 'next/link';
 import Header from '@/components/header';
 
 const TermsConditions: React.FC = () => {
@@ -35,7 +34,7 @@ const TermsConditions: React.FC = () => {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>4. Limitação de Responsabilidade</h2>
           <p className={styles.text}>
-            Este site e as informações, conteúdos, materiais, produtos e serviços incluídos ou disponibilizados para você através deste site são fornecidos por nós "no estado em que se encontram" e "conforme disponíveis", salvo indicação em contrário por escrito. Não fazemos representações ou garantias de qualquer tipo, expressas ou implícitas, quanto ao funcionamento deste site ou às informações, conteúdos, materiais, produtos ou serviços incluídos ou disponibilizados para você através deste site.
+            Este site e as informações, conteúdos, materiais, produtos e serviços incluídos ou disponibilizados para você através deste site são fornecidos por nós &quot;no estado em que se encontram&quot; e &quot;conforme disponíveis&quot;, salvo indicação em contrário por escrito. Não fazemos representações ou garantias de qualquer tipo, expressas ou implícitas, quanto ao funcionamento deste site ou às informações, conteúdos, materiais, produtos ou serviços incluídos ou disponibilizados para você através deste site.
           </p>
         </section>
 
