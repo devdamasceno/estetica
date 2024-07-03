@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Header from '@/components/header';
-import styles from '@/styles/home.module.css';
 import Nav from '@/components/nav';
 import About from '@/components/about';
 import Skills from '@/components/skills';
@@ -18,7 +17,7 @@ export default function Portfolio() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header />
-      <div className={styles.container}>
+      <div >
         <Nav />
       </div>
       <div >
