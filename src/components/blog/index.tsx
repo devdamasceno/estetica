@@ -25,9 +25,9 @@ const Blog: React.FC = () => {
           <a href="#" className={styles.readMore}>Leia Mais &gt;&gt;</a>
           <div className={styles.blogMeta}>
             <span className={styles.blogTag}>Desenvolvedor Web</span>
-            <span className={styles.blogText}>Texto: Sérgio</span>
+            <span className={styles.blogText}>Texto: Sérgio Damasceno</span>
             <span className={styles.blogDate}>Data: 28 Junho 2024</span>
-            <span className={styles.blogReadTime}>Read: 1 Min</span>
+            <span className={styles.blogReadTime}>Leitura: 4 Min</span>
           </div>
         </div>
       </div>

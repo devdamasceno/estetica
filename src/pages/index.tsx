@@ -1,41 +1,33 @@
 import Head from 'next/head';
-import Header from '@/components/header';
-import styles from '@/styles/home.module.css';
-import Nav from '@/components/nav';
-import About from '@/components/about';
-import Skills from '@/components/skills';
-import Works from '@/components/works';
-import Blog from '@/components/blog';
-import Contact from '@/components/contact';
+import styles from '../styles/home.module.css';
+import Link from 'next/link';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Welcome - Sérgio Damasceno</title>
+        <title>Bem vindo - Sérgio Damasceno</title>
         <meta name="description" content="Sérgio Damasceno Developer JS/TS" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <Header />
       <div className={styles.container}>
-        <Nav />
-      </div>
-      <div >
-        <About />
-      </div>
-      <div >
-        <Skills />
-      </div>
-      <div >
-        <Works />
-      </div>
-      <div >
-        <Blog />
-      </div>
-      <div >
-        <Contact />
+        <div className={styles.profile}>
+          <img src="/profile.png" alt="Sérgio Damasceno" className={styles.profileImg} />
+          <h1>Sérgio Damasceno</h1>
+          <p>Developer JS/TS</p>
+        </div>
+        <div className={styles.links}>
+          <Link legacyBehavior href="/portfolio">
+            <a className={styles.button}>Portfólio</a>
+          </Link>
+          <Link legacyBehavior href="/web3">
+            <a className={styles.button}>Web3</a>
+          </Link>
+        </div>
       </div>
     </>
   );
-}
+};
+
+export default Home;

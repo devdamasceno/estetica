@@ -6,6 +6,7 @@ import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact: React.FC = () => {
+  
   const [formData, setFormData] = useState({ name: '', email: '', message: '', captcha: '' });
   const [status, setStatus] = useState('');
   const [errors, setErrors] = useState({ name: '', email: '', message: '', captcha: '' });
@@ -102,7 +103,7 @@ const Contact: React.FC = () => {
         <span></span>
       </h2>
       <p className={styles.contactSubtitle}>
-        Atualmente estou disponível para trabalho freelance
+        Atualmente estou disponível para trabalho freelance 🧾
       </p>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
@@ -160,12 +161,12 @@ const Contact: React.FC = () => {
         {status && <p className={styles.statusMessage}>{status}</p>}
       </form>
       <footer className={styles.footer}>
-        <p>© 2023 Todos os direitos reservados.</p>
+        <p>© 2024 Todos os direitos reservados.</p>
         <div className={styles.footerLinks}>
-          <Link legacyBehavior href="/privacy-policy">
+          <Link legacyBehavior href="/privacidade">
             <a>Politica de Privacidade</a>
           </Link>
-          <Link legacyBehavior href="/terms-conditions">
+          <Link legacyBehavior href="/termos">
             <a>Termos & Condições</a>
           </Link>
         </div>

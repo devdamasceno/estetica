@@ -13,7 +13,7 @@ const Skills: React.FC = () => {
         Skills
         <span></span>
       </h2>
-      <p className={styles.skillsSubtitle}>Estou me esforçando para nunca parar de aprender e melhorar</p>
+      <p className={styles.skillsSubtitle}>Estou me esforçando para nunca parar de aprender e melhorar 🚀</p>
       <div className={styles.skillsGrid}>
         <div className={styles.skillBox}>
           <div className={styles.skillIcon}>💻</div>

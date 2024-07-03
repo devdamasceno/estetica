@@ -1,0 +1,47 @@
+.container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0e0e0;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.update {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #cecece;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #12F7D6;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.backLink {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+  color: #12F7D6;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}

@@ -12,7 +12,7 @@ const Works: React.FC = () => {
         Works
         <span></span>
       </h2>
-      <p className={styles.worksSubtitle}>Tive o prazer de trabalhar com esses projetos incríveis!</p>
+      <p className={styles.worksSubtitle}>Tive o prazer de trabalhar com esses projetos incríveis 📦</p>
       <div className={styles.projectDisplay}>
         <div className={styles.project}>
           <img src="/backgroundWork.svg" alt="Coding Project" className={styles.projectImage} />
