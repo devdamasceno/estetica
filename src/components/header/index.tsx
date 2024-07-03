@@ -26,6 +26,14 @@ const Header: React.FC = () => {
           <Image src='/logo.svg' alt="Logo" width={50} height={50} />
           <a>Sérgio Damasceno</a>
         </div>
+        <nav className={styles.navDesktop}>
+          <Link legacyBehavior href="/">
+            <a>Home</a>
+          </Link>
+          <Link legacyBehavior href="/blog">
+            <a>Blog</a>
+          </Link>
+        </nav>
         <nav className={styles.nav}>
           <ul className={styles.navList}>
             <li className={styles.navItem}>

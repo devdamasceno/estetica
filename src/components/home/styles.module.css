@@ -35,7 +35,6 @@
   text-align: center;
   background-color: #12F7D6;
   color: #fff;
-  text-decoration: none;
   border-radius: 0.5rem;
   font-size: 1.2rem;
   transition: background-color 0.3s;
@@ -43,4 +42,5 @@
 
 .button:hover {
   background-color: #0fb9b1;
+  text-decoration: none;
 }
