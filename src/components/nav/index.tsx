@@ -17,7 +17,6 @@ const Nav: React.FC = () => {
     }
   };
 
-
   return (
     <>
       <h1 id='nav' className={styles.developer}>developer</h1>

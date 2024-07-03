@@ -43,7 +43,7 @@
   height: 10px;
   border-radius: 50%;
   top: calc(107% + 0.5rem);
-  left: calc(50% - 5.5rem);
+  left: calc(56% - 5.5rem);
 }
 
 .skillsTitle::after {
@@ -51,7 +51,7 @@
   height: 10px;
   border-radius: 50%;
   top: calc(107% + 0.5rem);
-  left: calc(50% + 4.5rem); 
+  left: calc(47% + 4.5rem); 
 }
 
 .skillsTitle span::before {

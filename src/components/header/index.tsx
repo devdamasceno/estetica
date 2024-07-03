@@ -16,6 +16,7 @@ const Header: React.FC = () => {
 
   const handleSelect = (item: string) => {
     setSelected(item);
+    setMobileMenuOpen(false); 
   };
 
   return (
@@ -25,8 +26,51 @@ const Header: React.FC = () => {
           <Image src='/logo.svg' alt="Logo" width={50} height={50} />
           <a>Sérgio Damasceno</a>
         </div>
-        <div>
-          <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileNavOpen : ''}`}>
+        <nav className={styles.nav}>
+          <ul className={styles.navList}>
+            <li className={styles.navItem}>
+              <Link legacyBehavior href="/">
+                <a
+                  className={selected === 'home' ? styles.selected : ''}
+                  onClick={() => handleSelect('home')}
+                >
+                  Home
+                </a>
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link legacyBehavior href="/blog">
+                <a
+                  className={selected === 'blog' ? styles.selected : ''}
+                  onClick={() => handleSelect('blog')}
+                >
+                  Blog
+                </a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className={styles.mobileMenuButton} onClick={toggleMobileMenu}>
+          <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
+        </div>
+        <div className={styles.socialIcons}>
+          <a href="https://github.com/devdamasceno" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+            <span>Github</span>
+          </a>
+          <a href="https://www.linkedin.com/in/sergio-damasceno" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+            <span>Linkedin</span>
+          </a>
+          <a href="https://instagram.com/sergiodamasceno_" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+            <span>Instagram</span>
+          </a>
+        </div>
+      </header>
+      {isMobileMenuOpen && (
+        <div className={`${styles.mobileNav} ${isMobileMenuOpen ? styles.mobileNavOpen : ''}`}>
+          <nav>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
                 <Link legacyBehavior href="/">
@@ -50,25 +94,11 @@ const Header: React.FC = () => {
               </li>
             </ul>
           </nav>
-          <div className={styles.mobileMenuButton} onClick={toggleMobileMenu}>
-            <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
+          <div className={styles.closeButton} onClick={toggleMobileMenu}>
+            <FontAwesomeIcon icon={faTimes} />
           </div>
         </div>
-        <div className={styles.socialIcons}>
-          <a href="https://github.com/devdamasceno" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} />
-            <span>Github</span>
-          </a>
-          <a href="https://www.linkedin.com/in/sergio-damasceno" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} />
-            <span>Linkedin</span>
-          </a>
-          <a href="https://instagram.com/sergiodamasceno_" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} />
-            <span>Instagram</span>
-          </a>
-        </div>
-      </header>
+      )}
       <hr />
     </>
   );
