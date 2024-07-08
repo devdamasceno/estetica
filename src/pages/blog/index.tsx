@@ -39,7 +39,10 @@ const Blog: React.FC<{ posts: any[] }> = ({ posts }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
+  
   const posts = await client.getAllByType('post', { orderings: [{ field: 'my.post.date', direction: 'desc' }] });
+
+  console.log('Fetched posts:', posts);
 
   const mappedPosts = posts.map((post: any) => ({
     uid: post.uid,
