@@ -5,6 +5,8 @@ import { PrismicRichText } from '@prismicio/react';
 import styles from './styles.module.css';
 import Head from 'next/head';
 import Header from '@/components/header';
+import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 
 const Blog: React.FC<{ posts: any[] }> = ({ posts }) => {
   return (
@@ -26,7 +28,7 @@ const Blog: React.FC<{ posts: any[] }> = ({ posts }) => {
                 <a href={`/blog/${post.slugs[0]}`} className={styles.readMore}>Leia mais</a>
                 <div className={styles.postMeta}>
                   <span className={styles.metaAuthor}>📝 {post.data.autor[0].text}</span>
-                  <span className={styles.metaDate}>🗓️ {new Date(post.first_publication_date).toLocaleDateString()}</span>
+                  <span className={styles.metaDate}>🗓️ {format(new Date(post.first_publication_date), 'dd/MM/yyyy', { locale: ptBR })}</span>
                   <span className={styles.metaReadTime}>⌛ {post.data.tempo_de_leitura} min</span>
                 </div>
               </div>
@@ -39,10 +41,7 @@ const Blog: React.FC<{ posts: any[] }> = ({ posts }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  
   const posts = await client.getAllByType('post', { orderings: [{ field: 'my.post.date', direction: 'desc' }] });
-
-  console.log('Fetched posts:', posts);
 
   const mappedPosts = posts.map((post: any) => ({
     uid: post.uid,

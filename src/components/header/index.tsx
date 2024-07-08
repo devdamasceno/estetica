@@ -16,14 +16,16 @@ const Header: React.FC = () => {
 
   const handleSelect = (item: string) => {
     setSelected(item);
-    setMobileMenuOpen(false); 
+    setMobileMenuOpen(false);
   };
 
   return (
     <>
       <header className={styles.header}>
         <div className={styles.logo}>
-          <Image src='/logo.svg' alt="Logo" width={50} height={50} />
+          <Link href='/'>
+            <Image src='/logo.svg' alt="Logo" width={50} height={50} />
+          </Link>
           <a>Sérgio Damasceno</a>
         </div>
         <nav className={styles.navDesktop}>

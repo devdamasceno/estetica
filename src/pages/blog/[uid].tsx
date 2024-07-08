@@ -7,6 +7,8 @@ import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import styles from './uid.module.css';
 import Header from '@/components/header';
 import Head from 'next/head';
+import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 
 const Post: React.FC<{ post: any }> = ({ post }) => {
   if (!post || !post.data) {
@@ -27,7 +29,7 @@ const Post: React.FC<{ post: any }> = ({ post }) => {
         <h1 className={styles.postTitle}>{post.data.titulo?.[0]?.text || 'Título não disponível'}</h1>
         <div className={styles.postMeta}>
           <span className={styles.metaAuthor}>📝 {post.data.autor?.[0]?.text || 'Autor desconhecido'}</span>
-          <span className={styles.metaDate}>🗓️ {new Date(post.first_publication_date).toLocaleDateString()}</span>
+          <span className={styles.metaDate}>🗓️ {format(new Date(post.first_publication_date), 'dd/MM/yyyy', { locale: ptBR })}</span>
           <span className={styles.metaReadTime}>⌛ {post.data.tempo_de_leitura || 'Tempo de leitura não disponível'} min</span>
         </div>
         {post.data.image?.url && (
