@@ -19,10 +19,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <AnimatePresence mode="sync">
         <motion.div
           key={router.route}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 5 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1 }}
         >
           <Component {...pageProps} />
         </motion.div>
