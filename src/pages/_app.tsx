@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="sync">
         <motion.div
           key={router.route}
           initial={{ opacity: 0 }}
