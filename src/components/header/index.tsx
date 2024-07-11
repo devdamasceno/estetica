@@ -23,13 +23,13 @@ const Header: React.FC = () => {
     <>
       <header className={styles.header}>
         <div className={styles.logo}>
-          <Link href='/'>
+          <Link href='/portfolio'>
             <Image src='/logo.svg' alt="Logo" width={50} height={50} />
           </Link>
           <a>Sérgio Damasceno</a>
         </div>
         <nav className={styles.navDesktop}>
-          <Link legacyBehavior href="/">
+          <Link legacyBehavior href="/portfolio">
             <a>Home</a>
           </Link>
           <Link legacyBehavior href="/blog">

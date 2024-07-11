@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Blog: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const Blog: React.FC = () => {
           <p>
             O desenvolvimento web, também conhecido como desenvolvimento de sites, abrange uma variedade de tarefas e processos envolvidos na criação de sites para a internet...
           </p>
-          <a href="#" className={styles.readMore}>Leia Mais &gt;&gt;</a>
+          <a href="/blog" className={styles.readMore}>Leia Mais &gt;&gt;</a>
           <div className={styles.blogMeta}>
             <span className={styles.blogTag}>Desenvolvedor Web</span>
             <span className={styles.blogText}>Texto: Sérgio Damasceno</span>
@@ -32,8 +33,9 @@ const Blog: React.FC = () => {
         </div>
       </div>
       <div className={styles.actions}>
-        <button className={styles.viewMore}>Ver Mais</button>
-        <button className={styles.subscribe}>Inscrever</button>
+        <Link href='/blog'>
+          <button className={styles.viewMore}>Ver Mais</button>
+        </Link>
       </div>
     </div>
   );
