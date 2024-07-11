@@ -23,7 +23,9 @@ const Blog: React.FC = () => {
           <p>
             O desenvolvimento web, também conhecido como desenvolvimento de sites, abrange uma variedade de tarefas e processos envolvidos na criação de sites para a internet...
           </p>
-          <a href="/blog" className={styles.readMore}>Leia Mais &gt;&gt;</a>
+          <Link href='/blog'>
+            <a className={styles.readMore}>Leia Mais &gt;&gt;</a>
+          </Link>
           <div className={styles.blogMeta}>
             <span className={styles.blogTag}>Desenvolvedor Web</span>
             <span className={styles.blogText}>Texto: Sérgio Damasceno</span>
