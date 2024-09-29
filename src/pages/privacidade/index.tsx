@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './styles.module.css';
-import Link from 'next/link';
 import Header from '@/components/header';
 
 const PrivacyPolicy: React.FC = () => {

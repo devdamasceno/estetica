@@ -14,8 +14,8 @@
 
 html,
 body {
-  background-color: #292F36;
-  color: #fff;
+  background-color: #f7f7f4;
+  color: #999;
 }
 
 body {
@@ -43,15 +43,16 @@ p {
 }
 
 a {
-  color: #fff; 
+  color: #b98a44; 
   text-decoration: none;
   border: 0;
 }
 
 a:hover {
-  color: #12F7D6; 
+  color: #b76f02; 
   text-decoration: underline;
 }
+
 
 input,
 textarea,
@@ -109,21 +110,21 @@ select:focus {
 }
 
 .footer a:hover {
-  color: #12F7D6;
+  color: #b98a44;
   text-decoration: underline;
 }
 
 body.dark {
   background-color: #1e1e1e;
-  color: #fff;
+  color: #b98a44;
 }
 
 body.dark a {
-  color: #12F7D6;
+  color: #b98a44;
 }
 
 body.dark a:hover {
-  color: #12F7D6; 
+  color: #b98a44; 
 }
 
 body.dark .container {
@@ -134,4 +135,29 @@ body.dark .container {
 body.dark .footer {
   border-top: 1px solid #333;
   border: 0;
+}
+
+/* Aumenta a especificidade dos botões */
+.slick-prev, 
+.slick-next {
+  border: none !important; /* Remove a borda padrão */
+  border-radius: 50% !important; /* Torna as setas arredondadas */
+  width: 40px !important; /* Largura da seta */
+  height: 40px !important; /* Altura da seta */
+  z-index: 1;
+  color: white !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 22px !important; /* Ajusta o tamanho da seta */
+  color: white !important; /* Cor do ícone */
+}
+
+.slick-prev {
+  left: 30px !important; /* Ajusta a posição horizontal da seta esquerda */
+}
+
+.slick-next {
+  right: 30px !important; /* Ajusta a posição horizontal da seta direita */
 }

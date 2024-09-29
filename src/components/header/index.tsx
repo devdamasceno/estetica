@@ -30,10 +30,25 @@ const Header: React.FC = () => {
         </div>
         <nav className={styles.navDesktop}>
           <Link legacyBehavior href="/portfolio">
-            <a>Home</a>
+            <a>INíCIO</a>
           </Link>
           <Link legacyBehavior href="/blog">
-            <a>Blog</a>
+            <a>CLÍNICA</a>
+          </Link>
+          <Link legacyBehavior href="/blog">
+            <a>SERVIÇOS</a>
+          </Link>
+          <Link legacyBehavior href="/blog">
+            <a>SOBRE</a>
+          </Link>
+          <Link legacyBehavior href="/blog">
+            <a>CLIENTES</a>
+          </Link>
+          <Link legacyBehavior href="/blog">
+            <a>MATÉRIAS</a>
+          </Link>
+          <Link legacyBehavior href="/blog">
+            <a>DÚVIDAS</a>
           </Link>
         </nav>
         <nav className={styles.nav}>
@@ -44,7 +59,7 @@ const Header: React.FC = () => {
                   className={selected === 'home' ? styles.selected : ''}
                   onClick={() => handleSelect('home')}
                 >
-                  Home
+                  INíCIO
                 </a>
               </Link>
             </li>
@@ -54,7 +69,7 @@ const Header: React.FC = () => {
                   className={selected === 'blog' ? styles.selected : ''}
                   onClick={() => handleSelect('blog')}
                 >
-                  Blog
+                  CLÍNICA
                 </a>
               </Link>
             </li>
@@ -63,20 +78,7 @@ const Header: React.FC = () => {
         <div className={styles.mobileMenuButton} onClick={toggleMobileMenu}>
           <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
         </div>
-        <div className={styles.socialIcons}>
-          <a href="https://github.com/devdamasceno" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} />
-            <span>Github</span>
-          </a>
-          <a href="https://www.linkedin.com/in/sergio-damasceno" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} />
-            <span>Linkedin</span>
-          </a>
-          <a href="https://instagram.com/sergiodamasceno_" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} />
-            <span>Instagram</span>
-          </a>
-        </div>
+        <button className={styles.botaoAgendamento}>AGENDE UM HORÁRIO</button>
       </header>
       {isMobileMenuOpen && (
         <div className={`${styles.mobileNav} ${isMobileMenuOpen ? styles.mobileNavOpen : ''}`}>
@@ -88,7 +90,7 @@ const Header: React.FC = () => {
                     className={selected === 'home' ? styles.selected : ''}
                     onClick={() => handleSelect('home')}
                   >
-                    Home
+                    INíCIO
                   </a>
                 </Link>
               </li>
@@ -98,7 +100,57 @@ const Header: React.FC = () => {
                     className={selected === 'blog' ? styles.selected : ''}
                     onClick={() => handleSelect('blog')}
                   >
-                    Blog
+                    CLÍNICA
+                  </a>
+                </Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link legacyBehavior href="/blog">
+                  <a
+                    className={selected === 'blog' ? styles.selected : ''}
+                    onClick={() => handleSelect('blog')}
+                  >
+                    SERVIÇOS
+                  </a>
+                </Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link legacyBehavior href="/blog">
+                  <a
+                    className={selected === 'blog' ? styles.selected : ''}
+                    onClick={() => handleSelect('blog')}
+                  >
+                    SOBRE
+                  </a>
+                </Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link legacyBehavior href="/blog">
+                  <a
+                    className={selected === 'blog' ? styles.selected : ''}
+                    onClick={() => handleSelect('blog')}
+                  >
+                    CLIENTES
+                  </a>
+                </Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link legacyBehavior href="/blog">
+                  <a
+                    className={selected === 'blog' ? styles.selected : ''}
+                    onClick={() => handleSelect('blog')}
+                  >
+                    MATÉRIAS
+                  </a>
+                </Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link legacyBehavior href="/blog">
+                  <a
+                    className={selected === 'blog' ? styles.selected : ''}
+                    onClick={() => handleSelect('blog')}
+                  >
+                    DÚVIDAS
                   </a>
                 </Link>
               </li>
