@@ -1,11 +1,7 @@
 import Head from 'next/head';
 import Header from '@/components/header';
 import Nav from '@/components/nav';
-import About from '@/components/about';
-import Skills from '@/components/skills';
-import Works from '@/components/works';
 import Blog from '@/components/blog';
-import Contact from '@/components/contact';
 
 export default function Portfolio() {
   return (
@@ -20,21 +16,7 @@ export default function Portfolio() {
       <div >
         <Nav />
       </div>
-      <div >
-        <About />
-      </div>
-      <div >
-        <Skills />
-      </div>
-      <div >
-        <Works />
-      </div>
-      <div >
-        <Blog />
-      </div>
-      <div >
-        <Contact />
-      </div>
+
     </>
   );
 }

@@ -43,9 +43,7 @@ const Nav: React.FC = () => {
       </div>
 
       <div className={styles.menuClinica}>
-
         <div className={styles.menuClinicaCards}>
-
           <div className={styles.menuClinicaImageContent}>
             <div>
               <Image className={styles.menuClinicaImage} src='/img1.webp' alt='image' width={350} height={260} />
@@ -59,16 +57,43 @@ const Nav: React.FC = () => {
           </div>
 
           <div className={styles.whatsappContent} >
-            <button 
-              className={styles.whatsappButton} 
+            <button
+              className={styles.whatsappButton}
               onClick={() => window.open('https://wa.me/5532991287531', '_blank')} // Redireciona para o WhatsApp
             >
-              <FontAwesomeIcon icon={faWhatsapp} width={20} height={20} size='2x'/>⠀Agende um horário
+              <FontAwesomeIcon icon={faWhatsapp} width={20} height={20} size='2x' />⠀Agende um horário
             </button>
           </div>
-
         </div>
+
       </div>
+
+      <div className={styles.menuTratamento}>
+
+        <div className={styles.menuTratamentoContent}>
+          <h1>TRATAMENTOS E PROTOCOLOS EXCLUSIVOS!</h1>
+          <div className={styles.tratamentoDescricaoFluxo}>
+            <div className={styles.tratamentoDescricaoFluxoUm}>
+              <h1>Avaliação completa</h1>
+              <p>Tanto facial quanto corporal, onde a profissional detecta suas necessidades e traça o melhor plano de tratamento para alcançar resultados efetivos e de qualidade.</p>
+            </div>
+
+            <div className={styles.tratamentoDescricaoFluxoDois}>
+              <h1>Equipamentos avançados</h1>
+              <p>Contamos com um arsenal de equipamentos de tecnologia avançada desde a avaliação até os atendimentos em cabine proporcionando resultados superiores e em menor tempo.</p>
+            </div>
+
+            <div className={styles.tratamentoDescricaoFluxoTres}>
+              <h1>Melhor experiência</h1>
+              <p>O foco é sempre em atender bem, em um ambiente confortável e aconchegante com horários marcados e tempo de qualidade para proporcionar a melhor experiência desde o primeiro contato!</p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
     </>
   );
 };
