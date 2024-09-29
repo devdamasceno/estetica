@@ -63,7 +63,65 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 300px;
+  height: 350px;
+}
+
+.menuClinica {
+  background: linear-gradient(to right, #ceab73 0%, #ceab73 70%, #ceab73c2 100%);
+  margin-top: 7rem;
+  height: 30rem;
+  width: 100%;
+}
+
+.menuClinicaCards {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  margin: 0 auto;
+  border-radius: 3rem;
+  max-width: 1240px;
+  background-color: #fff;
+  height: 30rem;
+  position: relative; 
+  top: -5rem;
+
+}
+
+.menuClinicaImageContent {
+  display: flex;
+  gap: 2rem;
+}
+
+.menuClinicaImage {
+  transition: transform 0.3s ease-in-out; /* Suaviza a animação */
+}
+
+.menuClinicaImage:hover {
+  transform: scale(1.15); /* Expande a imagem e o card em 5% */
+}
+
+.whatsappButton {
+  margin-top: 2rem;
+  background: linear-gradient(to right, #ceab73 0%, #ceab73 70%, #ceab73c2 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 60px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsappButton i {
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+.whatsappButton:hover {
+  background-color: #b98a44; /* Cor ao passar o mouse */
 }
 
 
