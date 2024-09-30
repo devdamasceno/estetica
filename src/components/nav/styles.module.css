@@ -164,9 +164,6 @@
   gap: 1rem;
 }
 
-.tratamentoDescricaoFluxoUm {
-}
-
 .tratamentoDescricaoFluxoUm h1 {
   font-size: 1.2rem;
 }
@@ -196,8 +193,8 @@
 .tratamentoDescricaoFluxoTres {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  text-align: end;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .tratamentoDescricaoFluxoTres h1 {
@@ -206,6 +203,7 @@
 
 .tratamentoDescricaoFluxoTres p {
   font-size: 0.9rem;
+  text-align: end;
 }
 
 
@@ -254,6 +252,88 @@
 
   .sliderContainer {
     margin: 0rem;
+  }
+
+  .menuTratamentoContent {
+    background-image: none;
+    padding: 3rem 2rem;
+  }
+
+  .menuTratamentoContent h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .tratamentoDescricaoFluxo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    margin: 0 auto;
+  }
+
+  .menuTratamento {
+    display: flex;
+  }
+
+  .tratamentoDescricaoFluxoUm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    justify-content: center;
+    border-radius: 0.5rem;
+  }
+
+  .tratamentoDescricaoFluxoUm h1 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .tratamentoDescricaoFluxoUm p {
+    text-align: center;
+  }
+
+  .tratamentoDescricaoFluxoDois {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    justify-content: center;
+    border-radius: 0.5rem;
+  }
+
+  .tratamentoDescricaoFluxoDois h1 {
+    font-size: 1.2rem;
+  }
+
+  .tratamentoDescricaoFluxoTres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    justify-content: center;
+    border-radius: 0.5rem;
+  }
+
+  .tratamentoDescricaoFluxoTres h1 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .tratamentoDescricaoFluxoTres p {
+    text-align: center;
   }
 
 }
