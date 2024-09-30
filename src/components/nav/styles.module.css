@@ -126,13 +126,16 @@
 
 .menuTratamento {
   display: flex;
-  height: 53rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
   padding: 1rem;
+  margin-bottom: 4rem;
 }
 
 .menuTratamento h1 {
   display: flex;
-
   font-weight: 500;
   color: #b98a44;
   font-size: 2rem;
@@ -144,12 +147,12 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  height: 50rem;
+  height: 55rem;
 
   background-image: url('/tratamentoFluxograma.webp'); /* Caminho da imagem */
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
   background-position: center; /* Centraliza a imagem */
-  padding: 5rem; /* Adiciona algum espaço ao redor do conteúdo */
+  padding: 4rem; /* Adiciona algum espaço ao redor do conteúdo */
   border-radius: 1rem; /* Opcional: arredonda os cantos */
 }
 
@@ -280,7 +283,7 @@
 
   .menuTratamento {
     display: flex;
-    height: 67rem !important;
+    height: 80rem !important;
   }
 
   .menuTratamento h1 {
