@@ -68,6 +68,7 @@ const Nav: React.FC = () => {
       </div>
 
       <div className={styles.menuTratamento}>
+
         <div className={styles.menuTratamentoContent}>
           <h1>TRATAMENTOS E PROTOCOLOS EXCLUSIVOS!</h1>
           <div className={styles.tratamentoDescricaoFluxo}>
@@ -99,6 +100,12 @@ const Nav: React.FC = () => {
 
       <div className={styles.tarjaContainer}>
         <div className={styles.cardAnimados}>
+          <Image src='/imgAvancados.png' alt='Equipamentos avançados' width={300} height={150} className={styles.image} />
+          <Image src='/imgCompleta.png' alt='Avaliação completa' width={300} height={150} className={styles.image} />
+          <Image src='/imgExperiencia.png' alt='A melhor experiência' width={300} height={150} className={styles.image} />
+          <Image src='/imgAvancados.png' alt='Equipamentos avançados' width={300} height={150} className={styles.image} />
+          <Image src='/imgCompleta.png' alt='Avaliação completa' width={300} height={150} className={styles.image} />
+          <Image src='/imgExperiencia.png' alt='A melhor experiência' width={300} height={150} className={styles.image} />
           <Image src='/imgAvancados.png' alt='Equipamentos avançados' width={300} height={150} className={styles.image} />
           <Image src='/imgCompleta.png' alt='Avaliação completa' width={300} height={150} className={styles.image} />
           <Image src='/imgExperiencia.png' alt='A melhor experiência' width={300} height={150} className={styles.image} />

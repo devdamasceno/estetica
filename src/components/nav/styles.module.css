@@ -283,33 +283,41 @@
     margin-bottom: -3rem;
   }
 
-  .menuTratamentoContent {
-    background-image: none;
-    padding: 3rem 1rem;
-  }
-
-  .menuTratamentoContent h1 {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
   .tratamentoDescricaoFluxo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 20rem;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
   }
 
   .menuClinicaImage {
     padding: 0 1rem;
   }
 
+  .menuTratamentoContent {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem; /* Adiciona algum espaço ao redor do conteúdo */
+    border-radius: 1rem; /* Opcional: arredonda os cantos */
+  }
+
+  .menuTratamentoContent h1 {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
   .menuTratamento {
     display: flex;
-    height: 80rem !important;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .menuTratamento h1 {
@@ -319,13 +327,9 @@
   .tratamentoDescricaoFluxoUm {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 9rem;
 
     background-color: #fff;
     padding: 1.5rem 1rem;
-    justify-content: center;
     border-radius: 0.5rem;
   }
 
@@ -372,6 +376,10 @@
 
   .tratamentoDescricaoFluxoTres p {
     text-align: center;
+  }
+
+  .tarjaContainer {
+    display: none;
   }
 
 }
