@@ -17,8 +17,7 @@ const Nav: React.FC = () => {
     autoplaySpeed: 3000 // Velocidade do autoplay
   };
 
-
-  return (
+    return (
     <>
       <div className={styles.headerSlide}>
         <div className={styles.headerSlideIcon}>
@@ -61,7 +60,7 @@ const Nav: React.FC = () => {
               className={styles.whatsappButton}
               onClick={() => window.open('https://wa.me/5532991287531', '_blank')} // Redireciona para o WhatsApp
             >
-              <FontAwesomeIcon icon={faWhatsapp} width={20} height={20} size='2x' />⠀Agende um horário
+              <FontAwesomeIcon icon={faWhatsapp} size='1x'/>⠀Agende um horário
             </button>
           </div>
         </div>
