@@ -250,7 +250,7 @@
 
   .sliderContainer {
     margin: 0rem;
-    margin-top: -2rem;
+    margin-top: -3rem;
     margin-bottom: -3rem;
   }
 
@@ -280,7 +280,7 @@
 
   .menuTratamento {
     display: flex;
-    height: 71rem !important;
+    height: 67rem !important;
   }
 
   .menuTratamento h1 {
