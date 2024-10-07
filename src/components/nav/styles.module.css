@@ -108,7 +108,7 @@
   color: white;
   border: none;
   border-radius: 50px;
-  padding: 12px 60px;
+  padding: 16px 60px;
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -310,7 +310,7 @@
   .menuTratamentoContent h1 {
     display: inline;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem !important;
     font-weight: bold;
   }
 
@@ -318,10 +318,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 0;
   }
 
   .menuTratamento h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .tratamentoDescricaoFluxoUm {
@@ -379,7 +380,12 @@
   }
 
   .tarjaContainer {
-    display: none;
+    margin-top: 27rem;
+  }
+
+  .whatsappButton {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 
 }
