@@ -210,7 +210,7 @@
 .tarjaContainer {
   width: 100%;
   overflow: hidden; /* Esconde as imagens que estão fora da tela */
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
 }
 
 .cardAnimados {
@@ -383,6 +383,7 @@
 
   .tarjaContainer {
     margin-top: 20rem;
+    padding-bottom: 4rem;
   }
 
   .whatsappButton {
