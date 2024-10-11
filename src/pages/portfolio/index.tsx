@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '@/components/header';
 import Nav from '@/components/nav';
 import Blog from '@/components/blog';
+import { Servicos } from '@/components/servicos';
 
 export default function Portfolio() {
   return (
@@ -13,10 +14,8 @@ export default function Portfolio() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header />
-      <div >
-        <Nav />
-      </div>
-
+      <Nav />
+      <Servicos />
     </>
   );
 }
