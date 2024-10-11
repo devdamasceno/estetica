@@ -1,5 +1,49 @@
 .Container {
-  background-color: blueviolet;
   display: flex;
-  height: 50rem;
+  width: 100%;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1220px;
+  align-items: center;
+  height: 27rem;
+
+  background-image: url('/imgServico.webp'); /* Caminho da imagem */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  padding: 4rem; /* Adiciona algum espaço ao redor do conteúdo */
+  border-radius: 1rem; /* Opcional: arredonda os cantos */
+  margin-bottom: 5rem;
+}
+
+.ContentDescricao {
+  margin-top: 3rem;
+}
+
+.ContentDescricao img {
+  width: 4.25rem;
+  height: 4rem;
+}
+
+.ContentDescricao h1 {
+  margin-top: 1rem;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.Content p {
+  color: #FFF;
+  padding-right: 30rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ContentImagem {
+
 }
