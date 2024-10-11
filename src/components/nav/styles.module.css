@@ -129,9 +129,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50rem;
+  height: 48rem;
   padding: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .menuTratamento h1 {
@@ -303,8 +303,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 3rem; /* Adiciona algum espaço ao redor do conteúdo */
-    border-radius: 1rem; /* Opcional: arredonda os cantos */
+    padding: 3rem; 
+    border-radius: 1rem; 
   }
 
   .menuTratamentoContent h1 {
